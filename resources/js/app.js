@@ -6,8 +6,7 @@ let infoWindow;
 let markers = [];
 let autocomplete;
 const countryRestrict = { country: "th" };
-const MARKER_PATH =
-  "https://developers.google.com/maps/documentation/javascript/images/marker_green";
+const MARKER_PATH = "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 const hostnameRegexp = new RegExp("^https?://.+?/");
 const countries = {
   th: {
@@ -42,9 +41,6 @@ function initMap() {
 
 
   window.onload = (event) => {
-    console.log("page is fully loaded");
-
-    console.log('on load => ', document.getElementById("autocomplete").value, document.getElementById("autocomplete"))
     autocomplete = new google.maps.places.Autocomplete(
       document.getElementById("autocomplete"),
       {
